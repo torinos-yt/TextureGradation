@@ -14,7 +14,7 @@ namespace TextureGradation
         [SerializeField] Shape _shape = Shape.Line;
         [SerializeField] Gradient _gradient = new Gradient();
         [SerializeField] uint _resolution = 128;
-        [SerializeField] LinearGradient _linear = new LinearGradient();
+        [SerializeField] LineGradient _line = new LineGradient();
         [SerializeField] CircularGradient _circular = new CircularGradient();
         [SerializeField] RadialGradient _radial = new RadialGradient();
         [SerializeField] DiagonalGradient _diagonal = new DiagonalGradient();
@@ -26,7 +26,7 @@ namespace TextureGradation
 
             switch(_shape)
             {
-                case Shape.Line     : texture = _linear.GenerateTexture(_resolution, _gradient); break;
+                case Shape.Line     : texture = _line.GenerateTexture(_resolution, _gradient); break;
                 case Shape.Circular : texture = _circular.GenerateTexture(_resolution, _gradient); break;
                 case Shape.Radial   : texture = _radial.GenerateTexture(_resolution, _gradient); break;
                 case Shape.Diagonal : texture = _diagonal.GenerateTexture(_resolution, _gradient); break;

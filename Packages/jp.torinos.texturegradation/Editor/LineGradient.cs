@@ -4,7 +4,7 @@ using UnityEditor;
 namespace TextureGradation 
 {
     [System.Serializable]
-    public sealed class LinearGradient
+    public sealed class LineGradient
     {
         [SerializeField] Axis axis;
 
