@@ -26,7 +26,7 @@ Generate gradatuion texture asset as a custom asset importer.
 ## Install
 It can be installed by adding scoped registry to the manifest file(Packages/manifest.json).
 
-`scoped registry`
+`scopedRegistries`
 ````
 {
     "name": "torinos",
