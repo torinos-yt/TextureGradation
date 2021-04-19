@@ -1,0 +1,20 @@
+{
+  "author": "torinos",
+  "dependencies": {
+    "com.unity.mathematics": "1.2.1"
+  },
+  "description": "Dynamic Gradation Texture Importer",
+  "displayName": "Texture Gradation",
+  "keywords": [
+    "unity"
+  ],
+  "license": "MIT",
+  "name": "jp.torinos.texturegradation",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:torinos-yt/TextureGradation.git"
+  },
+  "unity": "2020.3",
+  "unityRelease": "0f1",
+  "version": "1.0.0"
+}
