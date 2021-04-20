@@ -36,5 +36,5 @@ It can be installed by adding scoped registry to the manifest file(Packages/mani
 ````
 `dependencies`
 ````
-"jp.torinos.texturegradation": "1.0.0"
+"jp.torinos.texturegradation": "1.0.1"
 ````
