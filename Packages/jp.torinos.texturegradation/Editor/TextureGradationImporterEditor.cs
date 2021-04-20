@@ -14,6 +14,8 @@ namespace TextureGradation
         SerializedProperty _shape;
         SerializedProperty _gradient;
         SerializedProperty _resolution;
+        SerializedProperty _wrapMode;
+        SerializedProperty _filterMode;
         SerializedProperty _line;
         SerializedProperty _circular;
         SerializedProperty _radial;
@@ -26,6 +28,8 @@ namespace TextureGradation
             _shape = serializedObject.FindProperty("_shape");
             _gradient = serializedObject.FindProperty("_gradient");
             _resolution = serializedObject.FindProperty("_resolution");
+            _wrapMode = serializedObject.FindProperty("_wrapMode");
+            _filterMode = serializedObject.FindProperty("_filterMode");
             _line = serializedObject.FindProperty("_line");
             _circular = serializedObject.FindProperty("_circular");
             _radial = serializedObject.FindProperty("_radial");
@@ -41,6 +45,8 @@ namespace TextureGradation
             EditorGUILayout.Space();
             EditorGUILayout.PropertyField(_gradient);
             EditorGUILayout.PropertyField(_resolution);
+            EditorGUILayout.PropertyField(_wrapMode);
+            EditorGUILayout.PropertyField(_filterMode);
             EditorGUILayout.Space();
 
             switch ((Shape)_shape.enumValueIndex)

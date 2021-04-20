@@ -14,6 +14,8 @@ namespace TextureGradation
         [SerializeField] Shape _shape = Shape.Line;
         [SerializeField] Gradient _gradient = new Gradient();
         [SerializeField] uint _resolution = 128;
+        [SerializeField] TextureWrapMode _wrapMode = TextureWrapMode.Repeat;
+        [SerializeField] FilterMode _filterMode = FilterMode.Bilinear;
         [SerializeField] LineGradient _line = new LineGradient();
         [SerializeField] CircularGradient _circular = new CircularGradient();
         [SerializeField] RadialGradient _radial = new RadialGradient();
@@ -33,6 +35,9 @@ namespace TextureGradation
                 case Shape.Box      : texture = _box.GenerateTexture(_resolution, _gradient); break;
                 default             : texture = new Texture2D(1,1); break;
             }
+
+            texture.wrapMode = _wrapMode;
+            texture.filterMode = _filterMode;
 
             context.AddObjectToAsset("texture", texture);
             context.SetMainObject(texture);
